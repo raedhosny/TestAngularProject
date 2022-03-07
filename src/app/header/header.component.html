@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Second</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Third</a>
+          </li>
+        </ul>
+        <form #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
+          <input name="Username" [(ngModel)]="model.Username" class="form-control me-2" type="text" placeholder="Username" aria-label="Username">
+          <input name="Password" [(ngModel)]="model.Password" class="form-control me-2" type="password" placeholder="Password" aria-label="Username">
+          <button class="btn btn-outline-success" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </nav>
